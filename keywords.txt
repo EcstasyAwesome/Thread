@@ -1,0 +1,15 @@
+###########################################
+# Datatypes (KEYWORD1)
+###########################################
+Thread	KEYWORD1
+###########################################
+# Methods and Functions (KEYWORD2)
+###########################################
+configure	KEYWORD2
+run	KEYWORD2
+pause	KEYWORD2
+resume	KEYWORD2
+isPause	KEYWORD2
+###########################################
+# Constants (LITERAL1)
+###########################################
