@@ -11,8 +11,8 @@ class Thread {
   public:
     void configure(void (*method)(void), const uint32_t interval, const bool pause = false);
     void run();
-	void pause();
-    void resume();
+	bool pause();
+    bool resume();
 	bool isPause();
 };
 

@@ -30,21 +30,29 @@ void Thread::run() {
 
 /*
  * Interrupts a thead
+ * @return true if the operation is successful
  */
  
-void Thread::pause() {
-  _pause = true;
+bool Thread::pause() {
+  if (!_pause) {
+    _pause = true;
+	return true;
+  }
+  return false;
 }
 
 /*
  * Runs a thread
+ * @return true if the operation is successful
  */
  
-void Thread::resume() {
+bool Thread::resume() {
   if (_pause) {
     _pause = false;
     _time = millis();
+	return true;
   }
+  return false;
 }
 
 /*
